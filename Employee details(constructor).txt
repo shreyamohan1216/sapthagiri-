@@ -1,0 +1,25 @@
+package Construstor;
+
+
+public class employee {
+    int id;
+    String name;
+    double salary;
+    employee(int id, String name, double salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+        
+    }
+    void details(){
+        System.out.println("Name ="+name);
+        System.out.println("ID ="+id);
+        System.out.println("Salary ="+salary);
+    }
+    public static void main(String args[])
+    {
+        employee e1=new employee(1,"xys",20000);
+        e1.details();
+    }
+    
+}
